@@ -91,3 +91,35 @@ h2 {
     width: 3rem;
     height: auto;
 }
+
+/*----Modal----*/
+
+#cookiesModal {
+    display: block;
+    background-color: #fff;
+    box-shadow: 0 1px 12px #555;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    position: fixed;
+    z-index: 2000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#closeModal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+#closeModal:hover {
+    cursor: pointer;
+    color: #000;
+}
+
+#cookiesModal h3{
+    color: black;
+    text-align: center;
+}
