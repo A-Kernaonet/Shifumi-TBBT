@@ -1,7 +1,7 @@
 body{
     margin: 0;
     box-sizing: border-box;
-    background-color: #C03443;
+    background-color: #931a0d;
 
 
     /* background-image: url(../img/fond-écran.jpg);
@@ -57,9 +57,9 @@ h2 {
     margin-left: 20px;
 }
 
-.bord{
+/* .bord{
     border: 2px solid black;
-}
+} */
 #userName{
     margin-left: 20px;
 }
@@ -82,4 +82,12 @@ h2 {
 .image{
     cursor: pointer;
     border-radius: 100%;
+}
+
+.gif{
+    margin-top: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 3rem;
+    height: auto;
 }
