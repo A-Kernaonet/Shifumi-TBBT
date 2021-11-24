@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #C03443;
+
+
+    /* background-image: url(../img/fond-écran.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+
+*{
+    color: white;
+}
+
+.score{
+    font-size: 4rem;
+}
+
+.choice{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 50px;
+    border: 2px dashed white;
+    border-radius: 5px;
+}
+
+/*-----------------
+      Header
+-----------------*/
+.logo{
+    width: 20rem;
+    height: auto;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+.sheldon{
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*--------------------
+        Main
+--------------------*/
+
+/*----User----*/
+.persoUser{
+    width: 13rem;
+    height: auto;
+    margin-left: 20px;
+}
+
+.bord{
+    border: 2px solid black;
+}
+#userName{
+    margin-left: 20px;
+}
+/*-----Bazinga-----*/
+
+#bazinga{
+    width: 30rem;
+    height: auto;
+}
+
+/*----CPU----*/
+
+.persoCpu{
+    width: 11.3rem;
+    height: auto;
+}
+
+/*----img games----*/
+
+.image{
+    cursor: pointer;
+    border-radius: 100%;
+}
