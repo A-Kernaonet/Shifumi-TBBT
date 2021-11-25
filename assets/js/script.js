@@ -3,10 +3,10 @@ $(function(){
     let cpuChoice;
     let cptUser = 0;
     let cptCpu = 0;
-    let winningGames = 3;
+    let winningGames = 5;
     const choices = document.querySelectorAll(".userChoice");
     console.log(choices);
-    
+
     //Modal games
     $('#instruction').click(function(){
         $('#cookiesModal').toggle();
