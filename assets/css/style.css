@@ -16,15 +16,17 @@ body{
 }
 
 .score{
-    font-size: 4rem;
+    font-size: 4.5rem;
 }
 
 .choice{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: 50px;
-    border: 2px dashed white;
-    border-radius: 5px;
+    /* padding-top: 30px;
+    padding-bottom: 1rem;
+    font-size: 50px; */
+    border: 4px dashed black;
+    border-radius: 20px;
+    height: 12.5rem;
+    width: auto;
 }
 
 /*-----------------
@@ -95,7 +97,7 @@ h2 {
 /*----Modal----*/
 
 #cookiesModal {
-    display: block;
+    display: none;
     background-color: #fff;
     box-shadow: 0 1px 12px #555;
     border-radius: 10px;
