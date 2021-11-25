@@ -17,17 +17,11 @@ $(function(){
     //fin modal games
 
  
-
-
-    // $('#scissors').draggable({ revert: "invalid" });
-    // $('#rock').draggable({ revert: "invalid" });
-    // $('#paper').draggable({ revert: "invalid" });
-    // $('#lizard').draggable({ revert: "invalid" });
-    // $('#spock').draggable({ revert: "invalid" });
-    $('.userChoice').draggable({ revert: "valid" });
+    $('.userChoice').draggable({ revert: "valid",  revert: true });
     $('.userChoice').on('dragstart', function (event) {
         userChoice = $(this).attr('id');
         $("#choiceCpu").html('');
+        $("#choiceUser").html('');
     });  
     $('#choiceUser').droppable({
         drop: function(event, ui) {
