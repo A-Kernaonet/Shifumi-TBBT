@@ -20,9 +20,10 @@ body{
 }
 
 .choice{
-    /* padding-top: 30px;
+    padding-top: 30px;
     padding-bottom: 1rem;
-    font-size: 50px; */
+   /* font-size: 50px; */
+    text-align: center;
     border: 4px dashed black;
     border-radius: 20px;
     height: 12.5rem;
