@@ -212,3 +212,40 @@ h2 {
     font-size: 1.7rem;
     border: 2px solid #931a0d;
 }
+
+/* Page accueil */
+
+#sheldonVideo{
+    background-color: #fcdc12;
+    border: 1px solid black;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px black;
+    padding-bottom: 10px;
+}
+
+#sheldonVideo h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#persoTbbt h3{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#choicePerso img{
+    width: 70%;
+}
+#choicePerso{
+    display: flex;
+    justify-content: center;
+}
+#pseudo{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+#start{
+    font-size: 1.2rem;
+}

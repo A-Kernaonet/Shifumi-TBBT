@@ -13,109 +13,65 @@
 <body>
     <header>
         <div class="container-fluid">
-            <div class="row justify-content-end pt-1">
-                <div class="text-center col-10">
+            <div class="row justify-content-end pt-1 pb-5">
+                <div class="text-center col">
                     <img class="logo" src="assets/img/logo.png" alt="Logo The Big Bang Theory">
                     <h1>Pierre - Papier - ciseaux - Lézard - Spock</h1>
                     <h2>contre  <span class="sheldon">Sheldon Cooper</span></h2>
-                </div>
-                <div class="col-1">
-                    <img id="instruction" class="gif" src="assets/img/112-book-morph-outline.gif" alt="">
                 </div>
             </div>
         </div>   
     </header>
     <main>
-        <div id="main">
-            <div class="container-fluid bord mt-3">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="row">
-                            <div id="user" class="col-6 text-center">
-                                <h3 id="userName">Player</h3>
-                                <img id="persoUser" class="persoUser" src="assets/img/leonard-removebg-preview.png" alt="Personnage de Léonard">
-                            </div>
-                            <div class="col-6 text-center">
-                                <div class="mb-3">
-                                    <p id="scoreUser" class="score">0</p>
-                                </div>
-                                <div id="choiceUser" class="text-center  choice">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4 text-center align-self-center">
-                        <img id="bazinga" src="assets/img/Bazinga2.png" alt="Bazinga">
-                    </div>
-                    <div class="col-4">
-                        <div class="row">
-                            <div class="col-6 text-center">
-                                <div class="mb-3">
-                                    <p id="scoreCpu" class="score">0</p>
-                                </div>
-                                <div id="choiceCpu" class="text-center  choice">   
-                                </div>
-                            </div>
-                            <div id="cpu" class="col-6 text-center">
-                                <h3 id="userCpu">Sheldon</h3>
-                                <img id="persoCpu" class="persoCpu" src="assets/img/Sheldon-removebg-preview.png" alt="Personnage de Sheldon">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container bord mt-3">
-                <div class="row align-items-start text-center">
-                    <div class="col">
-                        <h4>Pierre</h4>
-                        <img id="rock" class="image userChoice" src="assets/img/rock.png" alt="La pierre">
-                    </div>
-                    <div class="col">
-                        <h4>Ciseaux</h4>
-                        <img id="scissors" class="image userChoice" src="assets/img/scissors.png" alt="Les ciseaux">
-                    </div>
-                    <div class="col">
-                        <h4>Papier</h4>
-                        <img id="paper" class="image userChoice " src="assets/img/paper.png" alt="Le papier">
-                    </div>
-                    <div class="col">
-                        <h4>Lézard</h4>
-                        <img id="lizard" class="image userChoice" src="assets/img/lizard.png" alt="Le lezard">
-                    </div>
-                    <div class="col">
-                        <h4>Spock</h4>
-                        <img id="spock" class="image userChoice " src="assets/img/spock.png" alt="Spock">
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div id="sheldonVideo" class="col text-center">
+                    <h3>Comment on y joue ? Explication par Sheldon Cooper !</h3>
+                    <iframe id="video" width="840" height="472" src="https://www.youtube.com/embed/llq528pnv9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-
-
-
-        <div id="cookiesModal">
-            <span id="closeModal">&times;</span>
-            <div class="modalHeader">
-                <h3>Comment jouer ?</h3>
+        <div class="container">
+            <div class="row">
+                <div id="persoTbbt" class="mt-5 mb-5 mx-auto text-center">
+                    <h3>Choisis ton personnage préféré :</h3>
+                </div>
+                <div class="row ">
+                    <div id="choicePerso" class="text-center mb-5">
+                        <div class="col">
+                            <h4 class="mb-3">Léonard</h4>
+                            <img src="assets/img/leonard-removebg-preview.png" alt="Léonard chibi">
+                        </div>
+                        <div class="col">
+                            <h4 class="mb-3">Penny</h4>
+                            <img src="assets/img/penny-removebg-preview.png" alt="Penny chibi">
+                        </div>
+                        <div class="col">
+                            <h4 class="mb-3">Amy</h4>
+                            <img src="assets/img/Amy-removebg-preview.png" alt="Amy chibi">
+                        </div>
+                        <div class="col">
+                            <h4 class="mb-3">Howard</h4>
+                            <img src="assets/img/Howard-removebg-preview.png" alt="Howard chibi">
+                        </div>
+                        <div class="col">
+                            <h4 class="mb-3">Bernadette</h4>
+                            <img src="assets/img/bernadette-removebg-preview.png" alt="Bernadette chibi">
+                        </div>
+                        <div class="col">
+                            <h4 class="mb-3">Raj</h4>
+                            <img src="assets/img/Raj-removebg-preview.png" alt="Raj chibi">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <label for="pseudo" id="pseudo" class="mb-3">PSEUDO</label>
+                    <input type="text" class="px-2 py-1" placeholder="Indique ton pseudo" id="pseudoInput">
+                    <a href="games.html" type="button" class="mt-3 btn btn-warning mb-2" id="start">Commencer !</a>
+              </div> 
             </div>
-            <img class="shifumi" src="assets/img/regle shifumi.png" alt="Les règles du jeu">
         </div>
-        <div id="modalLose">
-            <div class="modalHeader">
-                <h3 class="loseTitle">T'es nul !!</h3>
-            </div>
-            <p class="loseText">"Bon sang ! C'est comme parler à un dauphin !"</p>
-            <img class="loseSheldon" src="assets/img/loosersheldon.png" alt="Sheldon qui le signe looser.">
-            <a href="index.html" type="button" class="btn btn-warning">Rejouer ?</a>
-        </div>
-        <div id="modalWin">
-            <div class="modalHeader">
-                <h3 class="winTitle">Tu as gagné !!!</h3>
-            </div>
-            
-            <img class="winSheldon" src="assets/img/seldonfou.png" alt="Sheldon qui perd.">
-            <p class="winText">"Ce n'est pas possible! Il doit y avoir une erreur dans la matrice !!"</p>
-            <a href="index.html" type="button" class="btn btn-warning">Rejouer ?</a>
-        </div>
+        
 
     </main>
 
