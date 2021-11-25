@@ -85,10 +85,15 @@ $(function(){
         if((cptUser==winningGames)||(cptCpu==winningGames))
         {
             if(cptUser==winningGames) { 
-                alert('Vous avez gagné!');
+                $('#modalWin').show();
+                $('header').hide();
+                $('#main').hide();
             }
             else {
-                alert('Vous avez perdu!');
+                $('#modalLose').show();
+                $('header').hide();
+                $('#main').hide();
+                
             }
         }
     }

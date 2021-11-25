@@ -126,3 +126,89 @@ h2 {
     color: black;
     text-align: center;
 }
+.shifumi{
+    text-align: center;
+    width: 100%;
+}
+
+/*----Modal Loose----*/
+#modalLose {
+    display: none;
+    background-color: #fff;
+    box-shadow: 5px 5px 30px black;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    position: fixed;
+    z-index: 2000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* backdrop-filter: blur( 20px ); */
+
+}
+#modalLose h3{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    text-align: center;
+}
+#modalLose p{
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: black;
+    text-align: center;
+}
+.loseSheldon{
+    justify-content: center;
+    width: 80%;
+}
+#modalLose .btn{
+    font-weight: bold;
+    font-size: 1.7rem;
+    border: 2px solid #931a0d;
+}
+
+/*----Modal Win----*/
+#modalWin {
+    display: none;
+    background-color: #fff;
+    box-shadow: 5px 5px 30px black;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    position: fixed;
+    z-index: 2000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* backdrop-filter: blur( 20px ); */
+
+}
+#modalWin h3{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    text-align: center;
+}
+#modalWin p{
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: black;
+    text-align: center;
+}
+.winSheldon{
+    justify-content: center;
+    width: 80%;
+}
+#modalWin .btn{
+    font-weight: bold;
+    font-size: 1.7rem;
+    border: 2px solid #931a0d;
+}
