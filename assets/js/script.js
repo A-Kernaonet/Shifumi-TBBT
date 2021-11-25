@@ -1,8 +1,12 @@
 $(function(){
     let userChoice;
     let cpuChoice;
+    let cptUser = 0;
+    let cptCpu = 0;
+    let winningGames = 3;
     const choices = document.querySelectorAll(".userChoice");
     console.log(choices);
+    
     //Modal games
     $('#instruction').click(function(){
         $('#cookiesModal').toggle();
@@ -59,45 +63,40 @@ $(function(){
             console.log(`Egalité`);
         }
         else if (
-                (userChoice == 'rock' && cpuChoice == 'lizard')
-                || (userChoice == 'rock' && cpuChoice == 'scissors')
-                || (userChoice == 'scissors' && cpuChoice === 'lizard')
-                || (userChoice == 'scissors' && cpuChoice === 'paper')
-                || (userChoice == 'paper' && cpuChoice === 'rock')
-                || (userChoice == 'paper' && cpuChoice === 'spock')
-                || (userChoice == 'lizard' && cpuChoice === 'spock')
-                || (userChoice == 'lizard' && cpuChoice === 'paper')
-                || (userChoice == 'spock' && cpuChoice === 'scissors')
-                || (userChoice == 'spock' && cpuChoice === 'rock')    
-            ){
-                console.log(`Player wins`);
-            }
-        else {
-            console.log(`CPU wins`);
+            (userChoice == 'rock' && cpuChoice == 'lizard')
+            || (userChoice == 'rock' && cpuChoice == 'scissors')
+            || (userChoice == 'scissors' && cpuChoice === 'lizard')
+            || (userChoice == 'scissors' && cpuChoice === 'paper')
+            || (userChoice == 'paper' && cpuChoice === 'rock')
+            || (userChoice == 'paper' && cpuChoice === 'spock')
+            || (userChoice == 'lizard' && cpuChoice === 'spock')
+            || (userChoice == 'lizard' && cpuChoice === 'paper')
+            || (userChoice == 'spock' && cpuChoice === 'scissors')
+            || (userChoice == 'spock' && cpuChoice === 'rock')    
+        ){
+            cptUser++;
+            $('#scoreUser').html(cptUser);
+            Winner();
         }
+        else {
+            cptCpu++;
+            $('#scoreCpu').html(cptCpu);
+            Winner();
+        }
+        
 
     }
-    //Logique du jeu
 
-    // for (let i = 0){
-
-        // if (joueur === cpu)
-        //     resultat = "vous avez gagné !";
-        // else if (
-        //     (joueur === '#rock' && cpu === '#lizard')
-        //     || (joueur === '#rock' && cpu === '#scissors')
-        //     || (joueur === '#scissors' && cpu === '#lizard')
-        //     || (joueur === '#scissors' && cpu === '#paper')
-        //     || (joueur === '#paper' && cpu === '#rock')
-        //     || (joueur === '#paper' && cpu === '#spock')
-        //     || (joueur === '#lizard' && cpu === '#spock')
-        //     || (joueur === '#lizard' && cpu === '#paper')
-        //     || (joueur === '#spock' && cpu === '#scissors')
-        //     || (joueur === '#spock' && cpu === '#rock')    
-        // )
-        //     resultat = "Vous avez gagné !!";
-        // else
-        //     resultat = "Vous avez perdu !";
-    // }
+    function Winner() {
+        if((cptUser==winningGames)||(cptCpu==winningGames))
+        {
+            if(cptUser==winningGames) { 
+                alert('Vous avez gagné!');
+            }
+            else {
+                alert('Vous avez perdu!');
+            }
+        }
+    }
 
 });
