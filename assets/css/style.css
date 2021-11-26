@@ -2,16 +2,9 @@ body{
     margin: 0;
     box-sizing: border-box;
     background-color: #931a0d;
-
-
-    /* background-image: url(../img/fond-écran.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
 }
 
-*{
+* {
     color: white;
 }
 
@@ -230,6 +223,10 @@ h2 {
     font-weight: bold;
     font-style: italic;
 }
+#video{
+    width: 840px; 
+    height: 472px;
+}
 
 #persoTbbt h3{
     font-weight: bold;
@@ -257,6 +254,75 @@ h2 {
     cursor: pointer;
 }
 
+/* -- Code pour le responsive -- */
 @media (max-width : 880px) {
     
+    body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #931a0d;
+}
+
+    .logo{
+        width: 15rem;
+        height: auto;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    .sheldon{
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    /* Page index */
+    #sheldonVideo{
+        background-color: #931a0d;
+        border: 1px solid black;
+        border-radius: 50px;
+        box-shadow: 5px 5px 10px black;
+        padding-bottom: 10px;
+    }
+    
+    #sheldonVideo h3{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-style: italic;
+    }
+    #video{
+        width: 300px; 
+        height: 153px;
+    }
+    #persoTbbt h3{
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    #choicePerso img{
+        width: 70%;
+    }
+    
+    #pseudo{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    #pseudoInput {
+        color: black;
+    }
+    #start{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .persoUser{
+        cursor: pointer;
+    }
+    /* .col  {
+         border:1px solid #FFF; 
+    } */
 }
