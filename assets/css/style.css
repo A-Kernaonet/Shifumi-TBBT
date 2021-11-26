@@ -45,6 +45,9 @@ h2 {
 /*--------------------
         Main
 --------------------*/
+#warning-message {
+    display: none;
+}
 
 /*----User----*/
 .persoUser{
@@ -326,7 +329,7 @@ h2 {
          border:1px solid #FFF; 
     } */
 
-    /* Page games */
+    /* --- Page games --- */
 
     .score{
         font-size: 2.5rem;
@@ -364,7 +367,7 @@ h2 {
     /*--------------------
         Main
     --------------------*/
-
+    
     /*----User----*/
     .persoUser{
         width: 5.5rem;
@@ -376,7 +379,7 @@ h2 {
         border: 2px solid black;
     } */
     #userName{
-        margin-left: 14px;
+        margin-left: 10px;
         font-size: 1.2rem;
     }
     /*-----Bazinga-----*/
@@ -413,11 +416,11 @@ h2 {
     }
     /*----img games----*/
     #itemGame h4{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .image{
         cursor: pointer;
-        width: 3rem;
+        width: 2.8rem;
     }
     /*----Modal----*/
 
@@ -536,4 +539,14 @@ h2 {
         border: 2px solid #931a0d;
     }
 
+}
+
+
+@media only screen and (orientation:portrait){
+    #mainView { display:none; }
+    #warning-message { display:block; }
+}
+@media only screen and (orientation:landscape){
+    #warning-message { display:none; }
+    #mainView { display:block; }
 }
