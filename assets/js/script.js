@@ -9,7 +9,7 @@ $(function(){
         const choices = document.querySelectorAll(".userChoice");
         console.log(choices);
 
-
+        // variable pour déclarer le choix du personnage, le récuperer du local storage et l'intégrer dans la page games.html
         var persoUserImg = localStorage.getItem('persoUserImg');
 
         if(!persoUserImg || persoUserImg==null || persoUserImg=='') {
@@ -21,12 +21,11 @@ $(function(){
         
         }
         
-        
+        // variable pour déclarer le pseudo, le récupérer du local storage(et/ou mettre un pseudo par défaut) et le mettre dans la page games.html
         var pseudoUser = localStorage.getItem('persoPseudo');
        
-     
         if(!pseudoUser || pseudoUser==null || pseudoUser=='') {
-        $('#userName').text('Toto');
+        $('#userName').text('Player');
         }
         else {
         $('#userName').text(pseudoUser);
@@ -45,7 +44,7 @@ $(function(){
         })
         //fin modal games
 
-    
+        // mise en place de la fonction drag and drop
         $('.userChoice').draggable({ revert: "valid",  revert: true });
         $('.userChoice').on('dragstart', function (event) {
             userChoice = $(this).attr('id');
@@ -76,6 +75,7 @@ $(function(){
             $("#choiceCpu").css('background', '#fcdc12').html(`<img id="${cpuChoice}" class="image" src="assets/img/${cpuChoice}.png">`);
         }
 
+        // Début des déclarations et la mise en place de la fonction pour le fight
         function fight() {
             getUSERChoice()
             getCPUChoice();
