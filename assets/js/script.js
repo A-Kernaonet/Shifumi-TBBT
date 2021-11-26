@@ -135,7 +135,10 @@ $(function(){
 
     function setUser() {
         localStorage.setItem('persoUserImg','');
-        localStorage.setItem('persoPseudo','');
+        //localStorage.setItem('persoPseudo','');
+        var pseudoUser = localStorage.getItem('persoPseudo');
+        $('#pseudoInput').val((!pseudoUser || pseudoUser==null || pseudoUser=='')? 'Player 1' : pseudoUser);
+
 
         $('.persoUser').click(function() {
             localStorage.setItem('persoUserImg',$(this).attr('id'));

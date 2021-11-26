@@ -133,7 +133,7 @@ h2 {
 
 /*----Modal Loose----*/
 #modalLose {
-    display: none;
+    display: block;
     background-color: #fff;
     box-shadow: 5px 5px 30px black;
     border-radius: 10px;
