@@ -148,7 +148,6 @@ $(function(){
         $('#start').click(function() {
             localStorage.setItem('persoPseudo',$("#pseudoInput").val());
         });
-
     }
 
 });
