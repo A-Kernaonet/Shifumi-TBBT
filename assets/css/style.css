@@ -256,3 +256,7 @@ h2 {
 .persoUser{
     cursor: pointer;
 }
+
+@media (max-width : 880px) {
+    
+}
