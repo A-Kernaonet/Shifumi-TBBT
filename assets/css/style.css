@@ -325,4 +325,135 @@ h2 {
     /* .col  {
          border:1px solid #FFF; 
     } */
+
+    /* Page games */
+
+    .score{
+        font-size: 2.5rem;
+    }
+    
+    .choice{
+        padding-top: 30px;
+        padding-bottom: 1rem;
+       /* font-size: 50px; */
+        text-align: center;
+        border: 4px dashed black;
+        border-radius: 20px;
+        height: 5.3rem;
+        width: auto;
+    }
+    
+    /*-----------------
+          Header
+    -----------------*/
+    .logo{
+        width: 10rem;
+        height: auto;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    .sheldon{
+        font-size: 1.1rem;
+        font-weight: bold;
+        font-style: italic;
+    }
+    /*--------------------
+        Main
+    --------------------*/
+
+    /*----User----*/
+    .persoUser{
+        width: 5.5rem;
+        height: auto;
+        margin-left: 6px;
+    }
+
+    /* .bord{
+        border: 2px solid black;
+    } */
+    #userName{
+        margin-left: 14px;
+        font-size: 1.2rem;
+    }
+    /*-----Bazinga-----*/
+
+    #bazinga{
+        width: 12rem;
+        height: auto;
+    }
+
+    /*----CPU----*/
+
+    .persoCpu{
+        width: 4.8rem;
+        height: auto;
+    }
+    #userCpu{
+        font-size: 1.2rem;
+    }
+    
+
+    /*----img games----*/
+
+    .image{
+        cursor: pointer;
+        border-radius: 100%;
+    }
+
+    .gif{
+        margin-top: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        width: 2rem;
+        height: auto;
+    }
+    /*----img games----*/
+    #itemGame h4{
+        font-size: 1rem;
+    }
+    .image{
+        cursor: pointer;
+        width: 3rem;
+    }
+    /*----Modal----*/
+
+    #cookiesModal {
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 1px 12px #555;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 40%;
+    position: fixed;
+    z-index: 2000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    }
+    #closeModal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    }
+    #closeModal:hover {
+    cursor: pointer;
+    color: #000;
+    }
+
+    #cookiesModal h3{
+    color: black;
+    text-align: center;
+    }
+    .shifumi{
+    text-align: center;
+    width: 100%;
+    }
+
+
 }
