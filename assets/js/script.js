@@ -131,6 +131,8 @@ $(function(){
         
     }
 
+    // Pour pouvoir choisir son personnage et son pseudo et l'envoyer sur une autre page grâce au local storage, c'est à dire un cookie
+
     function setUser() {
         localStorage.setItem('persoUserImg','');
         localStorage.setItem('persoPseudo','');
