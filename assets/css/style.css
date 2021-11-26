@@ -251,4 +251,8 @@ h2 {
 }
 #start{
     font-size: 1.2rem;
+    font-weight: bold;
+}
+.persoUser{
+    cursor: pointer;
 }

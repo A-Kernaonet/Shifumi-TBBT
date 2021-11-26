@@ -141,6 +141,7 @@ $(function(){
             localStorage.setItem('persoUserImg',$(this).attr('id'));
             $('.persoUser').css('border-bottom', '0px solid yellow');
             $(this).css('border-bottom', '5px solid yellow');
+            
         });
         
 
